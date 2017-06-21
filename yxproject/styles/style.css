@@ -31,3 +31,12 @@ img{
     display:  block;
     margin: 0 auto;
 }
+ul 
+   {
+    list-style-type : decimal-leading-zero;
+    }
+ table, th, td
+  {
+  border-collapse: collapse;
+  border: 1px solid gray
+  }   
