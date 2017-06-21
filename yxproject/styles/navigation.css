@@ -1,17 +1,22 @@
-body,html {
+* {
     margin:0;
     padding:0;
-    height: 100%;
-    width: 100%;
+
 }
-ul {
+.nav {
+    display: table;
+    margin: 100px auto;
+}
+.nav ul {
     list-style: none;
     overflow: hidden;
     
 }
 ul > li {
+    display: table-cell;
     float: left;
     text-align: center;
+    cursor: pointer;
 }
 ul > li > a {
     text-decoration: none;
@@ -25,10 +30,11 @@ ul > li > a {
 ul > li >a:hover{
    font-size: 24px;
    transition: .3s;
+   color: black;
 }
 ul > li:nth-child(1) > a {
     background: skyblue;
-    position: relative;
+    
 }
 ul > li:nth-child(2) > a {
     background : darkorange;
@@ -42,33 +48,9 @@ ul > li:nth-child(4) > a {
 ul > li:nth-child(5) > a {
     background: SlateGray;
 }
-ul > li:nth-child(1) > span {
+span {
     position: relative;
-    top: 0px;
-    left: 30px;
-    z-index: 1;
-}
-ul > li:nth-child(2) > span {
-    position: relative;
-    top: 0px;
-    left: 30px;
-    z-index: 1;
-}
-ul > li:nth-child(3) > span {
-    position: relative;
-    top: 0px;
-    left: 30px;
-    z-index: 1;
-}
-ul > li:nth-child(4) > span {
-    position: relative;
-    top: 0px;
-    left: 30px;
-    z-index: 1;
-}
-ul > li:nth-child(5) > span {
-    position: relative;
-    top: 0px;
+    top: 0;
     left: 30px;
     z-index: 1;
 }

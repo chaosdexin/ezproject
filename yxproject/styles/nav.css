@@ -1,0 +1,10 @@
+.navbar {
+    display:table;
+    margin:0 auto;
+}
+.navbar li {
+    display:table-cell;
+}
+.navbar li + li {
+    padding-left:20px;
+}
