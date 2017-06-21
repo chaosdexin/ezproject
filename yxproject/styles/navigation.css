@@ -3,24 +3,30 @@
     padding:0;
 
 }
+.container {
+    text-align: center;
+}
 .nav {
-    display: table;
-    margin: 100px auto;
+    display: inline-block;
+    margin: 100px 0;
 }
 .nav ul {
-    list-style: none;
-    overflow: hidden;
     
+    overflow: hidden;
+
+}
+ul {
+    list-style: none;
 }
 ul > li {
-    display: table-cell;
+
     float: left;
     text-align: center;
     cursor: pointer;
 }
 ul > li > a {
     text-decoration: none;
-    display: inline-block;
+    display: block;
     width: 150px;
     height: 50px;
     line-height: 50px;
@@ -48,9 +54,11 @@ ul > li:nth-child(4) > a {
 ul > li:nth-child(5) > a {
     background: SlateGray;
 }
-span {
+.nav >li >span {
+    display: block;
+    float: left;
     position: relative;
-    top: 0;
-    left: 30px;
+    top: 20px;
+    left: 18px;
     z-index: 1;
-}
+}  
